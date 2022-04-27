@@ -1,0 +1,13 @@
+Flask Notes
+
+test_config contains the app.config.from_mapping it gets loaded when it is passed to the create_app method
+
+app is the instance of Flask class , make sure to import Flask from flask
+
+if test_config is not provided then we use pyfile to generate a config file like to generate a real SECRET_KEY
+
+makedirs will check that instance path exists or not , its an important step because our .sqlite file will get stored inside it.
+
+route will setup the different urls with which you can visit the site.
+
+app.run(debug=True) -> This will run the app by running python file only , its pretty handy as you will not need to setup environment variable everytime.If you wish to make environment variable then you should try to use virtualenv.
